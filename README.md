@@ -1,4 +1,4 @@
-# Search Completion System  
+# Simple Search Engine using Hugging Face
 
 ## Purpose of the program
 The program is designed to provide users with an ability to get search term suggestions based on their input. The user can type a word or phrase, and the program will generate multiple possible suggestions and allow users to select one from a numbered list.
