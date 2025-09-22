@@ -9,7 +9,19 @@ The program is designed to provide users with an ability to get search term sugg
 - It helps users who may be unsure of what to type next.
 - It leverages advanced language models to generate relevant completions.
 - It can be adapted for various applications and platforms. For example, it could be integrated into a website or app to improve search functionality.
-  
+
+## Libraries and Techniques Used  
+
+- **Transformers (Hugging Face)**  
+  - I used the transformers library which provides pre-trained models for Natural Language Processing (NLP).  
+  - Specifically, I used the pipeline function from this library with the distilgpt2 model.  
+  - The pipeline("text-generation", model="distilgpt2") creates a ready-to-use text generator, which takes my input and produces possible completions.  
+
+- **Techniques in Python**  
+  - input() → to accept text typed by the user.  
+  - enumerate() in a loop → to display the generated suggestions as a **numbered list**.  
+  - Conditional check (if/else) → to make sure the number the user selects is valid.
+    
 ## How to run it  
 1. Install Python(newer version).  
 2. Install the Transformers library:  
@@ -18,6 +30,7 @@ The program is designed to provide users with an ability to get search term sugg
 3. Run the script:  
    ```bash
    python assignment04_chi_diep.py
+
    
 ## How the program works  
 The program runs in five main steps:  
